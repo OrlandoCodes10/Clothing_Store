@@ -66,6 +66,7 @@ body {
 #navbar li {
     list-style: none;
     padding: 20px;
+    position: relative;
 }
 
 #navbar li a {
@@ -81,5 +82,25 @@ body {
 #navbar li a.active {
     color: #088178;
 }
+/*Putting an underline on all of the navigation menu when hovering, used the first home nav menu as standard */
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+
+}
+
 /* Home page */
 
+#hero {
+    background-image: url("img")
+    height: 90vh;
+    width: 100%;
+
+
+}

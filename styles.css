@@ -34,11 +34,11 @@ p {
 }
 
 .section-p1 {
-    padding: 40px 50px;
+    padding: 40px; /*Padding for the feature section*/
 }
 
 .section-m1 {
-    margin: 40px 0;
+    margin: 40px 50px;
 }
 
 body {
@@ -54,6 +54,10 @@ body {
     padding: 20px 80px;
     background-color: #E3E6F3;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky; /*make the navbar sticky, so when we scroll up and down, the header bar sticks on top of the page*/
+    top: 0; left: 0;
+
 }
 
 #navbar {
@@ -98,9 +102,43 @@ body {
 /* Home page */
 
 #hero {
-    background-image: url("img")
+    background-image: url(img/hero4.png);
     height: 90vh;
     width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0%;
+    padding: 0 80px;
+    display: flex; /*diplay flex will display in row*/
+    flex-direction: column; /*Put the display in column vs. row */
+    align-items: flex-start;
+    justify-content: center;
+}
+#hero h4 {
+    padding-bottom: 15px; /*too add some space between h4 and h2*/
+}
+#hero h1 {
+    color: #088178 /*add our theme color (#088178) to h1*/
+}
 
+#hero button {
+    background-image: url(img/button.png); /*add background image of the button.png*/
+    background-color: transparent;
+    color: #088178;
+    border: 0;
+    padding: 14px 80px 14px 60px; /*top, left, bottom, 65*/
+    background-repeat: no-repeat; /* add more styles to the button */
+    cursor: pointer; /*makes are cusor become the "hand pointy image"*/
+    font-weight: 700;
+    font-size: 15px;
+}
+
+#feature .fe-box {
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+    border: 1px solid #cce7d0;
+    border-radius: 4px;
+    margin: 15px 0px;
 
 }

@@ -1,3 +1,4 @@
+/*It is called responsive web design when you use CSS and HTML to resize, hide, shrink, enlarge, or move the content to make it look good on any screen.*/
 @import url('https://fonts.googleapis.com/css2>family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
 * {
     margin: 0;
@@ -38,8 +39,21 @@ p {
 }
 
 .section-m1 {
-    margin: 40px 50px;
+    margin: 40px 0px;
 }
+
+button.normal {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px; /*top/botto left/right*/
+    color: #000;
+    background-color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    transition: 0.2s;
+}
+
 
 body {
     width: 100%;
@@ -132,6 +146,13 @@ body {
     font-size: 15px;
 }
 
+#feature {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
 #feature .fe-box {
     width: 180px;
     text-align: center;
@@ -141,4 +162,158 @@ body {
     border-radius: 4px;
     margin: 15px 0px;
 
+}
+
+#feature .fe-box:hover {
+    box-shadow: 10px 10px 34px rgba(70, 62, 221, 0.1); /*adding a hover box shadow on the #1 feature image*/
+}
+
+#feature .fe-box img { /*making the images on Feature section responsive as well*/
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#feature .fe-box h6 {
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color: #088178; 
+    background-color: #fddde4;
+}
+
+#feature .fe-box:nth-child(2) h6 { /* We're putting a different background colour per image/feature, using the "nth-child"*/
+    background-color: #cdebbc;
+}
+#feature .fe-box:nth-child(3) h6 {
+    background-color: #d1e8f2;
+}
+#feature .fe-box:nth-child(4) h6 {
+    background-color: #cdd4f8;
+}
+#feature .fe-box:nth-child(5) h6 {
+    background-color: #f6dbf6;
+}
+#feature .fe-box:nth-child(6) h6 {
+    background-color: #fff2e5;
+}
+
+#product1 {
+    text-align: center;
+}
+
+#product1 .pro { /*need to make sure that the image is also responsive*/
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02); 
+    margin: 15px 0; 
+    transition: 0.2s ease;
+    position: relative; /*connected to the child element .pro .cart*/
+}
+
+#product1 .pro:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+    transition: 0.2s ease; /*the transition when we hover on the product div there will be a 0.2s "ease" meaning it wont be instant*/
+}
+
+#product1 .pro img {
+    width: 100%; /*On the other hand, if you specify width:100% , the element's total width will be 100% of its containing block plus any horizontal margin, padding and border (unless you've used box-sizing:border-box , in which case only margins are added to the 100% to change how its total width is calculated).*/
+    border-radius: 20px;
+}
+
+#product1 .pro .des {
+    text-align: start; /*We align the text to the start (Left to right of the div, so it will start from the far most left side*/
+    padding: 10px 0; /*1. top/bottom 2. left/right*/
+}
+
+#product1 .pro .des span {
+    color: #606063;
+}
+
+#product1 .pro .des h5 {
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 14px;
+}
+
+#product1 .pro .des i {
+    font-size: 12px;
+    color: rgb(243, 181, 25);
+}
+
+#product1 .pro .des h4 {
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #088178;
+}
+
+#product1 .pro .cart { /*can't get this cart element to work*/ 
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #e8f6ea;
+    font-weight: 500;
+    color: #088178;
+    border: 1px solid #cce7d0;
+    position: absolute; /*if we use absolute in a child element*/
+    bottom: 20px;
+    right: 10px;
+} 
+
+#product1 .pro-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+#banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("img/banner/b2.jpg");
+    width: 100%;
+    height: 40vh; /*need to review vh*/
+    background-size: cover;
+    background-position: center;
+}
+
+#banner h4 {
+    color: #fff;
+    font-size: 16px;
+}
+
+#banner h2 {
+    color: white;
+    font-size: 30px;
+    padding: 10px 0;
+}
+
+#banner h2 span {
+    color: #ef3636
+}
+
+#banner button:hover {
+    background-color: #088178;
+    color: #fff;
+}
+
+#sm-banner .banner-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(img/banner/b17.jpg);
+    min-width: 580px;
+    height: 50vh; /*need to review vh*/
+    background-size: cover;
+    background-position: center;
 }

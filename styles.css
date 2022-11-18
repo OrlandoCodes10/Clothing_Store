@@ -703,9 +703,11 @@ footer .copyright {
     z-index: -9; /* To put the - you could add any value here*/
 }
 
-
-
 /* About Page */
+
+#page-header.about-header {
+    background-image: url(img/about/banner.png);
+}
 
 /* Contact Page */
 

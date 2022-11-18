@@ -630,6 +630,16 @@ footer .copyright {
 #prodetails .single-pro-details span {
     line-height: 20px; /*Adding line height(space)*/
 }
+
+/* Blog Page */
+
+
+
+/* About Page */
+
+/* Contact Page */
+
+/* Cart */
  
 @media (max-width:799px) /*this was the max-width of the dimensions of Ipad Air*/ {
     .section-p1 {
@@ -788,5 +798,21 @@ footer .copyright {
 
     footer .copyright {
         text-align: start;
+    }
+
+    /* Single Product*/
+
+    #prodetails {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #prodetails .single-pro-image {
+        width: 100%;
+        margin-right: 0px;
+    }
+
+    #prodetails .single-pro-details {
+        width: 100%;
     }
 }

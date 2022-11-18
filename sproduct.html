@@ -68,6 +68,77 @@
         </div>
     </section>
 
+    <section id="product1" class="section-p1">
+        <h2>Featured Products</h2>
+        <p>Summer Collection New Modern Design</p>
+        <div class="pro-container">
+            <div class="pro"> <!--This is to create a div for a product-->
+                <img src="img/products/n1.jpg" alt="">
+                <div class="des"> <!--This is for the description of the product-->
+                    <span>adidas</span>
+                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <div class="star"> <!--Stars = reviews of the product-->
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#"><i class="fas fa-cart-arrow-down cart"></i></a>
+            </div> 
+            <div class="pro"> <!--This is to create a div for a product-->
+                <img src="img/products/n2.jpg" alt="">
+                <div class="des"> <!--This is for the description of the product-->
+                    <span>adidas</span>
+                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <div class="star"> <!--Stars = reviews of the product-->
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#"><i class="fas fa-cart-arrow-down cart"></i></a>
+            </div> 
+            <div class="pro"> <!--This is to create a div for a product-->
+                <img src="img/products/n3.jpg" alt="">
+                <div class="des"> <!--This is for the description of the product-->
+                    <span>adidas</span>
+                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <div class="star"> <!--Stars = reviews of the product-->
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#"><i class="fas fa-cart-arrow-down cart"></i></a>
+            </div> 
+            <div class="pro"> <!--This is to create a div for a product-->
+                <img src="img/products/n4.jpg" alt="">
+                <div class="des"> <!--This is for the description of the product-->
+                    <span>adidas</span>
+                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <div class="star"> <!--Stars = reviews of the product-->
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#"><i class="fas fa-cart-arrow-down cart"></i></a>
+            </div> 
+        </div>
+    </section>
+
     <section id="newsletter" class="section-p1 section-m1" >
         <div class="newstext">
             <h4>Sign Up For Newsletters</h4>
@@ -129,7 +200,25 @@
         <div class="copyright">
             <p>&#169; 2022, Orlandocodes - HTML CSS Ecommerce</p>
         </div>
-    </footer>
+    </footer> 
+
+    <script> //This JS is not working, will need to come back to this//
+        var MainImg = document.getElementById("MainImg");
+        var smallimg = document.getElementsByClassName("small-img");
+
+        smallimg[0].onclick = function(){
+            MainImg.src = smallimg[0].src;
+        }
+        smallimg[1].onlick = function(){
+            MainImg.src = smallimg[1].src;
+        }
+        smallimg[2].onclick = function(){
+            MainImg.src = smallimg[2].src;
+        }
+        smallimg[3].onclick = function(){
+            MainImg.src = smallimg[3].src;
+        }
+    </script>
 
     <script src="script.js"></script>
 </body>

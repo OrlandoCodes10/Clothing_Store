@@ -96,7 +96,7 @@ body {
 #navbar li {
     list-style: none;
     padding: 20px;
-    position: relative;
+    position: relative; /*We must set this position as the parent element*/
 }
 
 #navbar li a {
@@ -109,7 +109,7 @@ body {
 }
 
 #navbar li a:hover,
-#navbar li a.active {
+#navbar li a.active { /* we added the "#navbar li a.active" for a elements with "active" class will have the underline*/
     color: #088178;
 }
 /*Putting an underline on all of the navigation menu when hovering, used the first home nav menu as standard */
@@ -533,6 +533,42 @@ footer .copyright {
     text-align: center;
 }
 
+/*Shop Page*/
+
+#page-header {
+    background-image: url(img/banner/b1.jpg); /*New banner photo*/
+    width: 100;
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+}
+
+#page-header h2,
+#page-header p {
+    color: #fff;
+}
+
+#pagination {
+    text-align: center;
+}
+
+#pagination a{
+    text-decoration: none;
+    background-color: #088178;
+    padding: 15px 20px;
+    border-radius: 4px;
+    color: #fff;
+}
+
+#pagination a i{
+    font-size: 16px;
+    font-weight: 600;
+}
+ 
 @media (max-width:799px) /*this was the max-width of the dimensions of Ipad Air*/ {
     .section-p1 {
         padding: 40px 80px;

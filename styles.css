@@ -633,7 +633,9 @@ footer .copyright {
 
 /* Blog Page */
 
-
+#page-header.blog-header {
+    background-image: url(img/banner/b19.jpg);
+}
 
 /* About Page */
 

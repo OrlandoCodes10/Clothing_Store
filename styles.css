@@ -951,4 +951,12 @@ footer .copyright {
         margin-bottom: 20px;
     }
 
+    #about-head div {
+        padding-left: 0px;
+    }
+
+    #about-app .video {
+        width: 100%;
+    }
+
 }

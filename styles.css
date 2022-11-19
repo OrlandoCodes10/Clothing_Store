@@ -1222,4 +1222,20 @@ footer .copyright {
         margin-bottom: 30px;
     }
 
+    /* Cart Page */
+
+    #cart-add {
+        flex-direction: column;
+    }
+
+    #coupon {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    #subtotal {
+        width: 100%;
+        padding: 20px;
+    }
+
 }

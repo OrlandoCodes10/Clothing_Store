@@ -741,6 +741,10 @@ footer .copyright {
 
 /* Contact Page */
 
+#page-header.contact-header {
+    background-image: url(img/banner/);
+}
+
 /* Cart */
  
 @media (max-width:799px) /*this was the max-width of the dimensions of Ipad Air*/ {
